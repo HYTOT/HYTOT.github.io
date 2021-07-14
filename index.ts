@@ -47,6 +47,8 @@ const htmlHead:string = `<head>
 `.replace(/[\r\n]/g, '').replace(/[ ]{2,}/g, '')
 const htmlBody:string = `<body>${htmlNodes.join('')}</body>`
 
-fs.writeFileSync(WORD_OUTPUT_FILE, `<!DOCTYPE html><html>${htmlHead}${htmlBody}</html>`)
-fs.writeFileSync(CSS_OUTPUT_FILE, `${styleSheet.replace(/[\r\n]/g, '').replace(/[ ]{2,}/g, '')}`)
+// fs.writeFileSync(WORD_OUTPUT_FILE, `<!DOCTYPE html><html>${htmlHead}${htmlBody}</html>`)
+// fs.writeFileSync(CSS_OUTPUT_FILE, `${styleSheet.replace(/[\r\n]/g, '').replace(/[ ]{2,}/g, '')}`)
+fs.writeFile('./index.html', `<!DOCTYPE html><html>${htmlHead}${htmlBody}</html>`, () => {})
+fs.writeFile('./index.css', `${styleSheet.replace(/[\r\n]/g, '').replace(/[ ]{2,}/g, '')}`, () => {})
 console.log('\n已根据文件内容生成网页！')
