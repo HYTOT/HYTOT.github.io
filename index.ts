@@ -1,17 +1,16 @@
 import * as fs from 'fs'
 import { Path } from './src/types/path'
 
-const { WORD_INPUT_FILE, WORD_OUTPUT_FILE, CSS_INPUT_FILE, CSS_OUTPUT_FILE } = Path
-const FOLDER:string = WORD_OUTPUT_FILE.slice(0, WORD_OUTPUT_FILE.lastIndexOf('/'))
+const { WORD_INPUT_FILE, CSS_INPUT_FILE } = Path
 
-fs.rmSync(FOLDER, {
-  recursive: true,
-  force: true,
-})
-console.log('\n旧文件夹已移除！')
+// fs.rmSync(FOLDER, {
+//   recursive: true,
+//   force: true,
+// })
+// console.log('\n旧文件夹已移除！')
 
-fs.mkdirSync(FOLDER)
-console.log('\n新文件夹已创建！')
+// fs.mkdirSync(FOLDER)
+// console.log('\n新文件夹已创建！')
 
 fs.watch('./src/styles/', {
   recursive: true
