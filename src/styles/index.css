@@ -22,33 +22,34 @@ html body {
   justify-content: space-evenly;
   align-items: flex-start;
   width: 100%;
-  -webkit-perspective: 300px 0;
   perspective: 300px 0;
+  -webkit-perspective: 300px 0;
 }
 .item-list .item {
   flex-direction: column;
   width: 20%;
   min-height: 25vw;
   margin: 2rem 1rem;
-  padding: 1rem;
   border: 0.1rem solid #ccc;
   border-radius: 1rem;
   background: lightyellow;
   word-break: keep-all;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition: transform 1s;
   cursor: pointer;
 }
 .item-list .item:hover {
   border: 0.1rem solid #ccc;
   transform: rotateY(180deg) scale(1.15);
+  -webkit-transform: rotateY(180deg) scale(1.15);
 }
 .item-list .item .item-row {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin: 0.5rem 0;
+  padding: 1rem;
   font-size: 0.8rem;
 }
 .item-list .item .item-row .label {
@@ -63,7 +64,6 @@ html body {
 .item-list .item .word {
   position: absolute;
   height: 100%;
-  padding: 1rem;
   color: #8e44ad;
   font-size: 1.2rem;
   font-weight: bold;
@@ -81,14 +81,17 @@ html body {
   color: #999;
   font-size: 2rem;
   transform: rotateZ(-15deg);
+  -webkit-transform: rotateZ(-15deg);
 }
 .item-list .item .explanation {
   color: #27ae60;
   line-height: 1.5rem;
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 .item-list .item .sentence {
   color: #2980b9;
   line-height: 1.5rem;
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
