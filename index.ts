@@ -11,7 +11,7 @@ fs.watch('./src/styles/', {
 }, ((event:'rename' | 'change', filename:string) => {
   if (event === 'change' && RegExp.lessFile.test(filename)) {
     const { exec } = require('child_process')
-    exec && exec('yarn style')
+    exec && exec('npm run style')
   }
 }))
 
@@ -51,6 +51,7 @@ const generateHTML = (arr:Array<string>) => {
   const htmlBody:string = `
     <body>
       <div class="item-list">${htmlNodes.join('')}</div>
+      <script>window.vocabularies=${JSON.stringify(htmlNodes)}</script>
     </body>
   `.replace(RegExp.tabAndLine, '').replace(RegExp.doubleWhitespace, '')
   console.log(`共收录 ${totalWords} 个词汇，${totalExplanations} 条释义，${totalSentences} 个例句！`)
