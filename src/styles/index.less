@@ -15,13 +15,14 @@
   width: 100%;
   perspective: 300px 0;
   -webkit-perspective: 300px 0;
+  overflow-x: hidden;
   .item {
     &:extend(.flex-center);
     flex-direction: column;
     width: 20%;
     min-height: 25vw;
     margin: 2rem 1rem;
-    border: .1rem solid #ccc;
+    border: .2rem solid #ddd;
     border-radius: 1rem;
     background: lightyellow;
     word-break: keep-all;
@@ -30,9 +31,9 @@
     transition: transform 1s;
     cursor: pointer;
     &:hover {
-      border: .1rem solid #ccc;
-      transform: rotateY(180deg) scale(1.15);
-      -webkit-transform: rotateY(180deg) scale(1.15);
+      border: .2rem solid #ddd;
+      transform: rotateY(180deg) scale(1.1);
+      -webkit-transform: rotateY(180deg) scale(1.1);
     }
     .item-row {
       display: flex;
@@ -40,6 +41,7 @@
       justify-content: center;
       width: 100%;
       margin: .5rem 0;
+      padding: 1rem;
       font-size: .8rem;
       .label {
         color: #333;
@@ -69,7 +71,7 @@
         top: -1rem;
         left: -4rem;
         width: 8rem;
-        color: #999;
+        color: #666;
         font-size: 2rem;
         transform: rotateZ(-15deg);
         -webkit-transform: rotateZ(-15deg);

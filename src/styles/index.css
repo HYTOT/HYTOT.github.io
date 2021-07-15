@@ -25,13 +25,14 @@ html body {
   width: 100%;
   perspective: 300px 0;
   -webkit-perspective: 300px 0;
+  overflow-x: hidden;
 }
 .item-list .item {
   flex-direction: column;
   width: 20%;
   min-height: 25vw;
   margin: 2rem 1rem;
-  border: 0.1rem solid #ccc;
+  border: 0.2rem solid #ddd;
   border-radius: 1rem;
   background: lightyellow;
   word-break: keep-all;
@@ -41,9 +42,9 @@ html body {
   cursor: pointer;
 }
 .item-list .item:hover {
-  border: 0.1rem solid #ccc;
-  transform: rotateY(180deg) scale(1.15);
-  -webkit-transform: rotateY(180deg) scale(1.15);
+  border: 0.2rem solid #ddd;
+  transform: rotateY(180deg) scale(1.1);
+  -webkit-transform: rotateY(180deg) scale(1.1);
 }
 .item-list .item .item-row {
   display: flex;
@@ -51,6 +52,7 @@ html body {
   justify-content: center;
   width: 100%;
   margin: 0.5rem 0;
+  padding: 1rem;
   font-size: 0.8rem;
 }
 .item-list .item .item-row .label {
@@ -80,7 +82,7 @@ html body {
   top: -1rem;
   left: -4rem;
   width: 8rem;
-  color: #999;
+  color: #666;
   font-size: 2rem;
   transform: rotateZ(-15deg);
   -webkit-transform: rotateZ(-15deg);
