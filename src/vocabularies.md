@@ -302,7 +302,7 @@
   ★ Would you care to partake of some refreshment?
   ★ They preferred not to partake in the social life of the town.
 ——
-*preoccupied* [adj.] [v.] [priˈɒkjupaɪd] / concentrated -> preoccupy
+*preoccupied* [adj.] [v.] [priˈɒkjupaɪd] / concentrated -> preoccupy [v.]
   (you are thinking a lot about something or someone, and so you hardly notice other things)
   ★ Kent was silent, preoccupied, deep in thought.
 ——
@@ -969,7 +969,7 @@
 *roost* [n.] [v.] [ruːst]
   (a place, such as a branch of a tree, where birds rest or sleep)
   ★ Something disturbed the bird on its roost.
-  
+——
 *gravitation* [n.] [ˌgrævɪˈteɪʃn] / gravity
   (the natural attraction that any two masses have for each other; the force of gravity)
   ★ Particles are attracted to each other by gravitation.
@@ -1002,7 +1002,7 @@
   (having good judgment about what will be needed in the future and making wise decisions based on this)
   ★ A provident father plans for his children's education.
   ★ Prices were falling and far-sighted men were looking for something else to cultivate.
-  
+——
 *subversion* [n.] [səbˈvɜːʃn] / abolition / destruction / breaking
   (the act of trying to destroy or damage an established system or government)
   ★ Even women starting to wear trousers was an act of subversion.
@@ -1062,3 +1062,19 @@
 *treacherous* [adj.] [ˈtretʃərəs] / disloyal / faithless
   (a person who is treacherous deceives someone who trusts them, or has no loyalty)
   ★ A known enemy is better than a treacherous friend.
+——
+*fiddling* [adj.] [ˈfɪdlɪŋ] / petty / insignificant / unimportant
+  (not important, or of no real interest)
+  ★ Fiddling technical details sometimes can make a great difference.
+——
+*paradoxical* [adj.] [ˌpærəˈdɒksɪkl] / contradictory / conflicting
+  (something involves two facts or qualities that seem to contradict each other)
+  ★ I was in a very difficult and paradoxical situation.
+——
+*cumulative* [adj.] [ˈkjuːmjələtɪv] / accumulative [adj.] -> accumulate [v.]
+  (increasing or increased in quantity, degree, or force by successive additions)
+  ★ The cumulative effect of using so many chemicals on the land could be disastrous.
+——
+*revere* [v.] [rɪˈvɪə(r)] / respect / admire
+  (to very much respect and admire someone or something)
+  ★ Students revere the old professor.

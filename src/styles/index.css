@@ -4,37 +4,91 @@
   box-sizing: border-box;
 }
 html {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 16px;
 }
 html body {
   min-height: 100vh;
 }
-.item {
-  padding: 1rem;
-}
-.item .label {
-  flex-shrink: 0;
-  width: 10rem;
-  padding: 0 1rem;
-  color: #333;
-  font-size: 1rem;
-  text-align: right;
-}
-.item .item-row {
+.flex-center,
+.item-list .item {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 0.25rem;
 }
-.item .word {
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  -webkit-perspective: 300px 0;
+  perspective: 300px 0;
+}
+.item-list .item {
+  flex-direction: column;
+  width: 20%;
+  min-height: 25vw;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 1rem;
+  background: lightyellow;
+  word-break: keep-all;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  cursor: pointer;
+}
+.item-list .item:hover {
+  border: 0.1rem solid #ccc;
+  transform: rotateY(180deg) scale(1.15);
+}
+.item-list .item .item-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+}
+.item-list .item .item-row .label {
+  color: #333;
+  font-size: 0.7rem;
+  font-style: italic;
+}
+.item-list .item .item-row .value {
+  font-style: italic;
+  text-indent: 2em;
+}
+.item-list .item .word {
+  position: absolute;
+  height: 100%;
+  padding: 1rem;
   color: #8e44ad;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: bold;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 1rem;
+  background: lightcyan;
+  backface-visibility: hidden;
+  user-select: none;
 }
-.item .explanation {
+.item-list .item .word .word-id {
+  position: fixed;
+  top: -1rem;
+  left: -1rem;
+  color: #999;
+  font-size: 2rem;
+  transform: rotateZ(-15deg);
+}
+.item-list .item .explanation {
   color: #27ae60;
-  font-size: 1.3rem;
+  line-height: 1.5rem;
+  transform: rotateY(180deg);
 }
-.item .sentence {
-  color: #d35400;
-  font-size: 1.3rem;
+.item-list .item .sentence {
+  color: #2980b9;
+  line-height: 1.5rem;
+  transform: rotateY(180deg);
 }
