@@ -21,6 +21,8 @@ const styleSheet:string = fs.readFileSync(CSS_INPUT_FILE, 'utf-8')
 console.log('已读取单词文件！')
 
 const vocabularies:Array<string> = fileContent.replace(RegExp.tabAndLine, '').split(/——/)
+
+// 数量统计变量
 let [totalWords, totalExplanations, totalSentences] = [0, 0, 0]
 
 // 生成 HTML
