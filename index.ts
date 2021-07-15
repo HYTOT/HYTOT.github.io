@@ -10,8 +10,9 @@ fs.watch('./src/styles/', {
   recursive: true
 }, ((event:'rename' | 'change', filename:string) => {
   if (event === 'change' && RegExp.lessFile.test(filename)) {
+    console.log('正在编译样式！')
     const { exec } = require('child_process')
-    exec && exec('npm run style')
+    exec && exec('yarn style')
   }
 }))
 
@@ -67,7 +68,6 @@ const { htmlHead, htmlBody } = generateHTML(vocabularies)
 
 const generateToRoot = () => {
   fs.existsSync(`${STATICS_DIR}`) || fs.mkdirSync(`${STATICS_DIR}`)
-  console.log('正在编译样式！')
   fs.writeFile(`${STATICS_DIR}/index.css`, `${styleSheet.replace(RegExp.tabAndLine, '').replace(RegExp.doubleWhitespace, '')}`, () => {})
   console.log('已生成网页样式！')
   fs.writeFile('./index.html', `<!DOCTYPE html><html>${htmlHead}${htmlBody}</html>`, () => {})
