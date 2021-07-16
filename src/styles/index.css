@@ -79,14 +79,17 @@ html body {
 }
 .item-list .item .word .word-id {
   position: fixed;
-  top: -2.2rem;
-  left: -2.2rem;
+  top: -1.5rem;
+  left: -1.5rem;
   width: 4rem;
   height: 4rem;
   color: #fff;
   font-size: 1.8rem;
   background: linear-gradient(to right bottom, lightseagreen, lightskyblue);
-  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 50%;
   box-shadow: 0 0 0.5rem #ccc;
   transform: rotateZ(-15deg);
   -webkit-transform: rotateZ(-15deg);
