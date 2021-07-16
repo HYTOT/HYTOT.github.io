@@ -1,24 +1,26 @@
 import * as fs from 'fs'
+import { exec } from 'child_process'
 import { Path } from './src/types/path'
 import { RegExp } from './src/utils/regExp'
 import { WordElement, ExplanationElement, SentenceElement } from './src/utils/elements'
 
 const { STATICS_DIR, WORD_INPUT_FILE, CSS_INPUT_FILE } = Path
 
+let compilingCSS = false
+
 // 监听样式文件夹变化，编译相关预处理样式表
 fs.watch('./src/styles/', {
   recursive: true
 }, ((event:'rename' | 'change', filename:string) => {
-  if (event === 'change' && RegExp.lessFile.test(filename)) {
+  if (!compilingCSS && event === 'change' && RegExp.lessFile.test(filename)) {
     console.log('正在编译样式！')
-    const { exec } = require('child_process')
-    exec && exec('yarn style')
+    compilingCSS = true
+    exec('yarn style', () => generateStyleSheets())
   }
 }))
 
-// 读取记录单词的 md文件 和 编译生成的 css样式文件
+// 读取记录单词的 md文件
 const fileContent:string = fs.readFileSync(WORD_INPUT_FILE, 'utf-8')
-const styleSheet:string = fs.readFileSync(CSS_INPUT_FILE, 'utf-8')
 console.log('已读取单词文件！')
 
 const vocabularies:Array<string> = fileContent.replace(RegExp.tabAndLine, '').split(/——/)
@@ -54,7 +56,7 @@ const generateHTML = (arr:Array<string>) => {
   const htmlBody:string = `
     <body>
       <div class="item-list">${htmlNodes.join('')}</div>
-      <script>window.vocabularies=${JSON.stringify(htmlNodes)}</script>
+      <script>window.vocabularies = Array.from(document.getElementsByClassName('item'))</script>
     </body>
   `.replace(RegExp.tabAndLine, '').replace(RegExp.doubleWhitespace, '')
   console.log(`共收录 ${totalWords} 个词汇，${totalExplanations} 条释义，${totalSentences} 个例句！`)
@@ -67,11 +69,18 @@ const generateHTML = (arr:Array<string>) => {
 const { htmlHead, htmlBody } = generateHTML(vocabularies)
 
 const generateToRoot = () => {
+  generateStyleSheets()
+  fs.writeFile('./index.html', `<!DOCTYPE html><html>${htmlHead}${htmlBody}</html>`, () => {})
+  console.log('已根据单词文件生成网页！')
+}
+
+const generateStyleSheets = () => {
+  // 读取编译生成的 css样式文件
+  const styleSheet:string = fs.readFileSync(CSS_INPUT_FILE, 'utf-8')
+  compilingCSS = false
   fs.existsSync(`${STATICS_DIR}`) || fs.mkdirSync(`${STATICS_DIR}`)
   fs.writeFile(`${STATICS_DIR}/index.css`, `${styleSheet.replace(RegExp.tabAndLine, '').replace(RegExp.doubleWhitespace, '')}`, () => {})
   console.log('已生成网页样式！')
-  fs.writeFile('./index.html', `<!DOCTYPE html><html>${htmlHead}${htmlBody}</html>`, () => {})
-  console.log('已根据单词文件生成网页！')
 }
 
 generateToRoot()

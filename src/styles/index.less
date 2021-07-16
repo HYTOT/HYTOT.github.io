@@ -19,19 +19,19 @@
   .item {
     &:extend(.flex-center);
     flex-direction: column;
-    width: 20%;
-    min-height: 25vw;
-    margin: 2rem 1rem;
-    border: .2rem solid #ddd;
+    width: 14rem;
+    min-height: 22rem;
+    margin: 2rem;
+    border: .2rem solid lightskyblue;
     border-radius: 1rem;
     background: lightyellow;
     word-break: keep-all;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    transition: transform 1s;
+    transition: all 1s;
     cursor: pointer;
     &:hover {
-      border: .2rem solid #ddd;
+      border: .2rem solid lightskyblue;
       transform: rotateY(180deg) scale(1.1);
       -webkit-transform: rotateY(180deg) scale(1.1);
     }
@@ -60,7 +60,7 @@
       font-size: 1.2rem;
       font-weight: bold;
       text-align: center;
-      line-height: 2rem;
+      line-height: 3rem;
       border-radius: 1rem;
       background: lightcyan;
       backface-visibility: hidden;
@@ -68,11 +68,15 @@
       .word-id {
         &:extend(.flex-center);
         position: fixed;
-        top: -1rem;
-        left: -4rem;
-        width: 8rem;
-        color: #666;
-        font-size: 2rem;
+        top: -2.2rem;
+        left: -2.2rem;
+        width: 4rem;
+        height: 4rem;
+        color: #fff;
+        font-size: 1.8rem;
+        background: linear-gradient(to right bottom, lightseagreen, lightskyblue);
+        border-radius: 50%;
+        box-shadow: 0 0 .5rem #ccc;
         transform: rotateZ(-15deg);
         -webkit-transform: rotateZ(-15deg);
       }

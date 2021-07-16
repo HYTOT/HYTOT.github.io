@@ -1078,3 +1078,19 @@
 *revere* [v.] [rɪˈvɪə(r)] / respect / admire
   (to very much respect and admire someone or something)
   ★ Students revere the old professor.
+——
+*imbue* [v.] [ɪmˈbjuː] -> imbue with
+  (to fill something or someone with a quality or feeling)
+  ★ He managed to imbue his employees with team spirit.
+——
+*gush* [v.] [gʌʃ] / pour / spill -> gush out
+  (to flow or send out quickly and in large amounts)
+  ★ Blood was gushing from his nose.
+——
+*dislodge* [v.] [dɪsˈlɒdʒ] / chase sb out / chase sth out
+  (to remove something or someone, especially by force, from a fixed position)
+  ★ She became champion in 1982 and no one has been able to dislodge her.
+——
+*livid* [adj.] [ˈlɪvɪd] / enraged / angry
+  (extremely angry)
+  ★ She was absolutely livid that he had lied.
