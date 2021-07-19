@@ -199,9 +199,11 @@
   (a document that lists goods that have been supplied or services that have been done, and says how much money you owe for them)
   ★ We will then send you an invoice for the total course fees.
 ——
-*impair* [v.] [ɪmˈpeə(r)] / damage / impact -> *impaired* [adj.] <-> repair
+*impair* [v.] [ɪmˈpeə(r)] / *mar* [v.] [mɑː(r)] / damage / impact -> *impaired* [adj.] <-> repair
   (weaken or damage something)
+  (to spoil something, making it less good or less enjoyable)
   ★ Smoking can impair your health.
+  ★ The grandmother remained silent, not to mar the happiness of the child.
   ★ The blast left him with permanently impaired hearing.
 ——
 *prerequisite* [adj.] [n.] [ˌpriːˈrekwəzɪt] -> *requisite* [adj.] [n.] [ˈrekwɪzɪt] / necessary / essential
@@ -1094,3 +1096,48 @@
 *livid* [adj.] [ˈlɪvɪd] / enraged / angry
   (extremely angry)
   ★ She was absolutely livid that he had lied.
+——
+*upfront* [adj.] [adv.] [ˌʌpˈfrʌnt] / honest / frank / in advance / beforehand
+  (speaking or behaving in a way that makes intentions and beliefs clear)
+  (paid or obtained in advance)
+  ★ She’s very upfront about her feelings.
+  ★ He wants 20% of the money upfront.
+——
+*fiasco* [n.] [fiˈæskəʊ] / failure / disaster
+  (a complete failure)
+  ★ The meeting was a fiasco from start to finish.
+——
+*estrange* [v.] [ɪˈstreɪndʒ] -> estrange oneself from sb
+  (to cause someone to no longer have a friendly relationship with another person or other people)
+  ★ His behaviour estrange him from his brother.
+——
+*neurological* [adj.] [ˌnjʊərəˈlɒdʒɪkl] -> neurology [n.] [njʊəˈrɒlədʒi]
+  (relating to nerves)
+  ★ Neurological weaknesses do not cause work inhibition.
+——
+*hackneyed* [adj.] [ˈhæknid] / commonplace / conventional / ordinary / boring
+  (said or used so often that it has become boring and has no meaning)
+  ★ Things we learn at school are always hackneyed.
+——
+*harebrained* [adj.] ['heəbreɪnd] / ridiculous / foolish / silly / stupid
+  (foolish; not practical)
+  ★ That sounds like another of his harebrained schemes!
+——
+*secretive* [adj.] [ˈsiːkrətɪv] (people) / *confidential* [adj.] [ˌkɒnfɪˈdenʃl] (things)
+  (have secrets and to keep knowledge, feelings, or intentions hidden)
+  (secret or private, often in a formal, business, or military situation)
+  ★ He's being very secretive about his new girlfriend.
+  ★ All information will be treated as strictly confidential.
+——
+*circumvent* [v.] [ˌsɜːkəmˈvent] / *bypass* [v.] [n.] [ˈbaɪpɑːs] / avoid
+  (to avoid something by going around it)
+  ★ Young people still want to circumvent their parents’ control.
+  ★ We managed to bypass the shopping centre by taking side-streets.
+——
+*injunction* [n.] [ɪnˈdʒʌŋkʃn] / prohibition / forbiddance / restriction / ban
+  (an official order given by a law court, usually to stop someone from doing something)
+  ★ The court has issued an injunction to prevent distribution of the book.
+——
+*definitive* [adj.] [dɪˈfɪnətɪv] / definite / conclusive / ultimate / authoritative
+  (firm, final, and complete; not to be questioned or changed)
+  ★ There is no definitive scientific evidence that coffee is harmful.

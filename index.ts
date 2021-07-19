@@ -4,7 +4,7 @@ import { Path } from './src/types/path'
 import { RegExp } from './src/utils/regExp'
 import { WordElement, ExplanationElement, SentenceElement } from './src/utils/elements'
 
-const { STATICS_DIR, WORD_INPUT_FILE, CSS_INPUT_FILE } = Path
+const { STATICS_DIR, TEM8_WORD_INPUT_FILE, CSS_INPUT_FILE } = Path
 
 let compilingCSS = false
 
@@ -20,7 +20,7 @@ fs.watch('./src/styles/', {
 }))
 
 // 读取记录单词的 md文件
-const fileContent:string = fs.readFileSync(WORD_INPUT_FILE, 'utf-8')
+const fileContent:string = fs.readFileSync(TEM8_WORD_INPUT_FILE, 'utf-8')
 console.log('已读取单词文件！')
 
 const vocabularies:Array<string> = fileContent.replace(RegExp.tabAndLine, '').split(/——/)
@@ -50,7 +50,8 @@ const generateHTML = (arr:Array<string>) => {
   const htmlHead:string = `
     <head>
       <title>Vocabularies</title>
-      <link rel="stylesheet" type="text/css" href="${STATICS_DIR}index.css">
+      <link rel="stylesheet" type="text/css" href="${STATICS_DIR}index.css"/>
+      <link rel="icon" href="${STATICS_DIR}favicon.ico"/>
     </head>
   `.replace(RegExp.tabAndLine, '').replace(RegExp.doubleWhitespace, '')
   const htmlBody:string = `

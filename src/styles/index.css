@@ -32,10 +32,11 @@ html body {
   width: 14rem;
   min-height: 22rem;
   margin: 2rem;
+  word-break: keep-all;
   border: 0.2rem solid lightskyblue;
   border-radius: 1rem;
   background: lightyellow;
-  word-break: keep-all;
+  box-shadow: 0 0 0.5rem lightskyblue;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transition: all 1s;
