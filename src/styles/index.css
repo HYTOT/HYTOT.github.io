@@ -95,14 +95,7 @@ html body {
   transform: rotateZ(-15deg);
   -webkit-transform: rotateZ(-15deg);
 }
-.item-list .item .explanation {
-  color: #27ae60;
-  line-height: 1.25rem;
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-}
-.item-list .item .sentence {
-  color: #2980b9;
+.item-list .item .word-back {
   line-height: 1.25rem;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);

@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import { exec } from 'child_process'
 import { Path } from './src/types/path'
 import { RegExp } from './src/utils/regExp'
-import { WordElement, ExplanationElement, SentenceElement } from './src/utils/elements'
+import { WordElement, WordBackSideElement } from './src/utils/elements'
 
 const { STATICS_DIR, TEM8_WORD_INPUT_FILE, CSS_INPUT_FILE } = Path
 
@@ -20,13 +20,29 @@ fs.watch('./src/styles/', {
 }))
 
 // 读取记录单词的 md文件
-const fileContent:string = fs.readFileSync(TEM8_WORD_INPUT_FILE, 'utf-8')
+const fileContent:string = fs.readFileSync(process.env.INPUT_FILE || TEM8_WORD_INPUT_FILE, 'utf-8')
 console.log('已读取单词文件！')
 
 const vocabularies:Array<string> = fileContent.replace(RegExp.tabAndLine, '').split(/——/)
 
 // 数量统计变量
-let [totalWords, totalExplanations, totalSentences] = [0, 0, 0]
+let [totalWords, totalWordDetails1, totalWordDetails2] = [0, 0, 0]
+
+const logTips = () => {
+  let tips:string
+  switch (process.env.INPUT_FILE) {
+    case './src/tem8.md':
+      tips = `共收录 ${totalWords} 个词汇，${totalWordDetails1} 条释义，${totalWordDetails2} 个例句！`
+      break
+    case './src/advanced.md':
+      tips = `共收录 ${totalWords} 个基本词汇，${totalWordDetails1} 个相应高阶词汇！`
+      break
+    default:
+      tips = ''
+      break
+  }
+  console.log(tips)
+}
 
 // 生成 HTML
 const generateHTML = (arr:Array<string>) => {
@@ -36,11 +52,17 @@ const generateHTML = (arr:Array<string>) => {
       if (/^\*/.test(item)) {
         return WordElement(++totalWords, `${item.replace(/[\*]/g, '')}`)
       } else if (/^\(/.test(item)) {
-        ++totalExplanations
-        return ExplanationElement('Word explanation:', `${item.replace(/[\(\)]/g, '')}`)
+        ++totalWordDetails1
+        return WordBackSideElement(
+          process.env.INPUT_FILE === './src/tem8.md'
+            ? 'Word explanation:'
+            : '',
+          `${item.replace(/[\(\)]/g, '')}`,
+          'color: #27ae60;'
+        )
       } else if (/^\★/.test(item)) {
-        ++totalSentences
-        return SentenceElement('Example sentence:', `${item.replace(/★ /g, '')}`)
+        ++totalWordDetails2
+        return WordBackSideElement('Example sentence:', `${item.replace(/★ /g, '')}`, 'color: #2980b9;')
       } else {
         return item
       }
@@ -60,7 +82,7 @@ const generateHTML = (arr:Array<string>) => {
       <script>window.vocabularies = Array.from(document.getElementsByClassName('item'))</script>
     </body>
   `.replace(RegExp.tabAndLine, '').replace(RegExp.doubleWhitespace, '')
-  console.log(`共收录 ${totalWords} 个词汇，${totalExplanations} 条释义，${totalSentences} 个例句！`)
+  logTips()
   return {
     htmlHead,
     htmlBody,
