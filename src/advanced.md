@@ -1,29 +1,64 @@
 *good*
-  (awesome)
-  (incredible)
-  (marvellous)
+  ★ awesome
+  ★ incredible
+  ★ marvellous
 ——
 *important*
-  (requisite)
-  (essential)
-  (indispensable)
+  ★ requisite
+  ★ essential
+  ★ indispensable
 ——
 *angry*
-  (provoked)
-  (enraged)
+  ★ provoked
+  ★ enraged
 ——
 *hardworking*
-  (industrious)
-  (studious)
+  ★ industrious
+  ★ studious
 ——
 *brave*
-  (courageous)
-  (adventurous)
+  ★ courageous
+  ★ adventurous
 ——
 *generous*
-  (gracious)
-  (magnanimous)
+  ★ gracious
+  ★ magnanimous
 ——
 *humorous*
-  (witty)
-  (amusing)
+  ★ witty
+  ★ amusing
+——
+*ambitious*
+  ★ aggressive
+  ★ competitive
+——
+*worried*
+  ★ uneasy
+  ★ apprehensive
+——
+*beautiful*
+  ★ exquisite
+  ★ charming
+  ★ gorgeous
+——
+*expensive*
+  ★ pricey
+  ★ exorbitant
+  ★ extortionate
+——
+*delicious*
+  ★ tasty
+  ★ appetising
+——
+*careless*
+  ★ remiss
+——
+*tired*
+  ★ exhausted
+——
+*enough*
+  ★ adequate
+——
+*advanced*
+  ★ state-of-the-art
+  ★ up-to-date

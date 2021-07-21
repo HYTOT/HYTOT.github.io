@@ -1,7 +1,9 @@
-export const WordElement = (id:number, word:string) => `
+export const WordElement = (word:string, topLeft?:number, bottomLeft?:number, bottomRight?:number) => `
   <div class="item-row word">
-    <div class="word-id">${id}</div>
+    ${topLeft ? '<div class="word-top-left">'+topLeft+'</div>' : ''}
     ${word}
+    ${bottomLeft ? '<div class="word-bottom-left">'+bottomLeft+'</div>' : ''}
+    ${bottomRight ? '<div class="word-bottom-right">'+bottomRight+'</div>' : ''}
   </div>
 `
 

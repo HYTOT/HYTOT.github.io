@@ -26,13 +26,14 @@
     border: .2rem solid lightskyblue;
     border-radius: 1rem;
     background: lightyellow;
-    box-shadow: 0 0 .5rem lightskyblue;
+    box-shadow: 0 0 .5rem lightgray;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     transition: all 1s;
     cursor: pointer;
     &:hover {
-      border: .2rem solid lightskyblue;
+      border: .2rem solid gold;
+      box-shadow: 0 0 1rem gold;
       transform: rotateY(180deg) scale(1.1);
       -webkit-transform: rotateY(180deg) scale(1.1);
     }
@@ -43,15 +44,14 @@
       width: 100%;
       margin: .5rem 0;
       padding: 1rem;
-      font-size: .8rem;
       .label {
         color: #333;
         font-size: .7rem;
         font-style: italic;
       }
       .value {
+        font-size: .9rem;
         font-style: italic;
-        text-indent: 2em;
       }
     }
     .word {
@@ -66,23 +66,50 @@
       background: lightcyan;
       backface-visibility: hidden;
       user-select: none;
-      .word-id {
+      .word-top-left,
+      .word-bottom-left,
+      .word-bottom-right {
         &:extend(.flex-center);
         position: fixed;
-        top: -1.5rem;
-        left: -1.5rem;
         width: 4rem;
         height: 4rem;
         color: #fff;
         font-size: 1.8rem;
+        box-shadow: 0 0 .5rem #ccc;
+        opacity: .85;
+      }
+      .word-top-left {
+        top: -1.2rem;
+        left: -1.2rem;
         background: linear-gradient(to right bottom, lightseagreen, lightskyblue);
         border-top-left-radius: 50%;
         border-top-right-radius: 20%;
         border-bottom-left-radius: 20%;
         border-bottom-right-radius: 50%;
-        box-shadow: 0 0 .5rem #ccc;
-        transform: rotateZ(-15deg);
-        -webkit-transform: rotateZ(-15deg);
+        transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+      }
+      .word-bottom-left {
+        bottom: -1.2rem;
+        left: -1.2rem;
+        background: linear-gradient(to right top, darkgoldenrod, darkkhaki);
+        border-top-left-radius: 20%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 20%;
+        transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+      }
+      .word-bottom-right {
+        bottom: -1.2rem;
+        right: -1.2rem;
+        background: linear-gradient(to left top, crimson, lightcoral);
+        border-top-left-radius: 50%;
+        border-top-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 50%;
+        transform: rotateZ(10deg);
+        -webkit-transform: rotateZ(10deg);
       }
     }
     .word-back {

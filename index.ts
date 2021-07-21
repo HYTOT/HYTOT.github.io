@@ -35,7 +35,7 @@ const logTips = () => {
       tips = `共收录 ${totalWords} 个词汇，${totalWordDetails1} 条释义，${totalWordDetails2} 个例句！`
       break
     case './src/advanced.md':
-      tips = `共收录 ${totalWords} 个基本词汇，${totalWordDetails1} 个相应高阶词汇！`
+      tips = `共收录 ${totalWords} 个基本词汇，${totalWordDetails2} 个相应高阶词汇！`
       break
     default:
       tips = ''
@@ -48,21 +48,23 @@ const logTips = () => {
 const generateHTML = (arr:Array<string>) => {
   const htmlNodes:Array<string> = arr.map((node:string) => {
     const row:Array<string> = node.split(RegExp.doubleWhitespace)
+    let [rowDetails1, rowDetails2] = [
+      row.filter((item:string) => /^\(/.test(item)).length,
+      row.filter((item:string) => /^\★/.test(item)).length
+    ]
     const innerHTML:string = row.map((item:string) => {
       if (/^\*/.test(item)) {
-        return WordElement(++totalWords, `${item.replace(/[\*]/g, '')}`)
+        return WordElement(`${item.replace(/[\*]/g, '')}`, ++totalWords, rowDetails1, rowDetails2)
       } else if (/^\(/.test(item)) {
         ++totalWordDetails1
-        return WordBackSideElement(
-          process.env.INPUT_FILE === './src/tem8.md'
-            ? 'Word explanation:'
-            : '',
-          `${item.replace(/[\(\)]/g, '')}`,
-          'color: #27ae60;'
-        )
+        return WordBackSideElement('Word explanation:', `${item.replace(/[\(\)]/g, '')}`, 'color: #27ae60;')
       } else if (/^\★/.test(item)) {
         ++totalWordDetails2
-        return WordBackSideElement('Example sentence:', `${item.replace(/★ /g, '')}`, 'color: #2980b9;')
+        const wordDetails:string = item.replace(/★ /g, '')
+        const [label, value, style]:Array<string> = process.env.INPUT_FILE === './src/tem8.md'
+          ? ['Example sentence:', `${wordDetails}`, 'color: #2980b9;']
+          : ['', `${wordDetails}`, 'color: #27ae60; text-align: center;']
+        return WordBackSideElement(label, value, style)
       } else {
         return item
       }
