@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import { exec } from 'child_process'
 import { Path } from './src/types/path'
 import { RegExp } from './src/utils/regExp'
-import { WordElement, WordBackSideElement } from './src/utils/elements'
+import { WordComponent, WordBackSideComponent } from './src/utils/components'
 
 const { STATICS_DIR, TEM8_WORD_INPUT_FILE, CSS_INPUT_FILE } = Path
 
@@ -54,17 +54,17 @@ const generateHTML = (arr:Array<string>) => {
     ]
     const innerHTML:string = row.map((item:string) => {
       if (/^\*/.test(item)) {
-        return WordElement(`${item.replace(/[\*]/g, '')}`, ++totalWords, rowDetails1, rowDetails2)
+        return WordComponent(`${item.replace(/[\*]/g, '')}`, ++totalWords, rowDetails1, rowDetails2)
       } else if (/^\(/.test(item)) {
         ++totalWordDetails1
-        return WordBackSideElement('Word explanation:', `${item.replace(/[\(\)]/g, '')}`, 'color: #27ae60;')
+        return WordBackSideComponent('Word explanation:', `${item.replace(/[\(\)]/g, '')}`, 'color: #27ae60;')
       } else if (/^\★/.test(item)) {
         ++totalWordDetails2
         const wordDetails:string = item.replace(/★ /g, '')
         const [label, value, style]:Array<string> = process.env.INPUT_FILE === './src/tem8.md'
           ? ['Example sentence:', `${wordDetails}`, 'color: #2980b9;']
           : ['', `${wordDetails}`, 'color: #27ae60; text-align: center;']
-        return WordBackSideElement(label, value, style)
+        return WordBackSideComponent(label, value, style)
       } else {
         return item
       }
