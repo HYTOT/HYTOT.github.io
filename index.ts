@@ -9,15 +9,17 @@ const { STATICS_DIR, TEM8_WORD_INPUT_FILE, CSS_INPUT_FILE } = Path
 let compilingCSS = false
 
 // 监听样式文件夹变化，编译相关预处理样式表
-fs.watch('./src/styles/', {
-  recursive: true
-}, ((event:'rename' | 'change', filename:string) => {
-  if (!compilingCSS && event === 'change' && RegExp.lessFile.test(filename)) {
-    console.log('正在编译样式！')
-    compilingCSS = true
-    exec('yarn style', () => generateStyleSheets())
-  }
-}))
+const observeStyleSheetsChanges = () => {
+  fs.watch('./src/styles/', {
+    recursive: true
+  }, ((event:'rename' | 'change', filename:string) => {
+    if (!compilingCSS && event === 'change' && RegExp.lessFile.test(filename)) {
+      console.log('正在编译样式！')
+      compilingCSS = true
+      exec('yarn style', () => generateStyleSheets())
+    }
+  }))
+}
 
 // 读取记录单词的 md文件
 const fileContent:string = fs.readFileSync(process.env.INPUT_FILE || TEM8_WORD_INPUT_FILE, 'utf-8')
@@ -111,4 +113,5 @@ const generateStyleSheets = () => {
   })
 }
 
+observeStyleSheetsChanges()
 generateToRoot()
