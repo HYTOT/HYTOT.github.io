@@ -95,8 +95,10 @@ const { htmlHead, htmlBody } = generateHTML(vocabularies)
 
 const generateToRoot = () => {
   generateStyleSheets()
-  fs.writeFile('./index.html', `<!DOCTYPE html><html>${htmlHead}${htmlBody}</html>`, () => {})
-  console.log('已根据单词文件生成网页！')
+  fs.writeFile('./index.html', `<!DOCTYPE html><html>${htmlHead}${htmlBody}</html>`, () => {
+    console.log('已根据单词文件生成网页！')
+    exec('start index.html')
+  })
 }
 
 const generateStyleSheets = () => {
@@ -104,8 +106,9 @@ const generateStyleSheets = () => {
   const styleSheet:string = fs.readFileSync(CSS_INPUT_FILE, 'utf-8')
   compilingCSS = false
   fs.existsSync(`${STATICS_DIR}`) || fs.mkdirSync(`${STATICS_DIR}`)
-  fs.writeFile(`${STATICS_DIR}/index.css`, `${styleSheet.replace(RegExp.tabAndLine, '').replace(RegExp.doubleWhitespace, '')}`, () => {})
-  console.log('已生成网页样式！')
+  fs.writeFile(`${STATICS_DIR}/index.css`, `${styleSheet.replace(RegExp.tabAndLine, '').replace(RegExp.doubleWhitespace, '')}`, () => {
+    console.log('已生成网页样式！')
+  })
 }
 
 generateToRoot()
