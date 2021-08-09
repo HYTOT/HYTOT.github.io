@@ -1,4 +1,10 @@
-export const WordElement = (word:string, topLeft?:number, bottomLeft?:number, bottomRight?:number) => `
+export const HeaderComponent = (labels:Array<string>) => `
+  <header class="header-component">
+
+  </header>
+`
+
+export const WordComponent = (word:string, topLeft?:number, bottomLeft?:number, bottomRight?:number) => `
   <div class="item-row word">
     ${topLeft ? '<div class="word-top-left">'+topLeft+'</div>' : ''}
     ${word}
@@ -7,21 +13,21 @@ export const WordElement = (word:string, topLeft?:number, bottomLeft?:number, bo
   </div>
 `
 
-export const WordBackSideElement = (label:string, value:string, style:string = 'color: #27ae60;') => `
+export const WordBackSideComponent = (label:string, value:string, style:string = 'color: #27ae60;') => `
   <div class="item-row word-back" style="${style}">
     <div class="label">${label}</div>
     <div class="value">${value}</div>
   </div>
 `
 
-export const ExplanationElement = (label:string, value:string) => `
+export const ExplanationComponent = (label:string, value:string) => `
   <div class="item-row explanation">
     <div class="label">${label}</div>
     <div class="value">${value}</div>
   </div>
 `
 
-export const SentenceElement = (label:string, value:string) => `
+export const SentenceComponent = (label:string, value:string) => `
   <div class="item-row sentence">
     <div class="label">${label}</div>
     <div class="value">${value}</div>
