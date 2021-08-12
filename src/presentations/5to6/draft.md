@@ -9,12 +9,14 @@ With an increasingly accelerating of science and technology development, varieti
 In the following, let's focus on WeChat Mini-Programs, then we'll discuss what it is and how it changes our habits.
 
 [introduction]
-As we all know, WeChat Mini-Programs are widely used in our daily life
+As we all know, WeChat Mini-Programs are widely used in our daily life, thousands of them have launching, covering various industries with diverse functions.
+They run within the WeChat app as sub-applications, they can be used handily without downloading and installation.
+They're ligter than mobile apps and more secure than websites, users are able to access a large amount of services without leaving WeChat.
+
+[usage]
+
 
 # usage
-# advantages
-  lighter than mobile apps
-  more secure than websites
 # how to change our habits
   role in / industries / jobs / positions
 # comparison
