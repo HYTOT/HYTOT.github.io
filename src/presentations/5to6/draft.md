@@ -14,8 +14,9 @@ They run within the WeChat app as sub-applications, they can be used handily wit
 They're ligter than mobile apps and more secure than websites, users are able to access a large amount of services without leaving WeChat.
 They're not substitutes for mobile apps, but complement each other.
 
-[usage]
-
+[habits]
+Mini-programs have been changing our consumption habits, we can order takeout, reserve tickets and share shopping discounts more convenient in e-commerce era.
+Mini-programs have been changing our travel habits, we can
 
 # usage
 # how to change our habits
