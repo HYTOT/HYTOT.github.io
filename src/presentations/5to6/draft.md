@@ -15,8 +15,8 @@ They're ligter than mobile apps and more secure than websites, users are able to
 They're not substitutes for mobile apps, but complement each other.
 
 [habits]
-Mini-programs have been changing our consumption habits, we can order takeout, reserve tickets and share shopping discounts more convenient in e-commerce era.
-Mini-programs have been changing our travel habits, we can
+Mini-programs have been changing our consumption habits, we can order takeout, reserve tickets and share shopping discounts, our e-commerce era becomes more abundant.
+Mini-programs have been changing our travel habits, we can track where the bus goes, pay with the traffic code and rent shared bicycles, our transportation becomes more convenient.
 
 # usage
 # how to change our habits
