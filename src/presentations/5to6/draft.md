@@ -12,18 +12,24 @@ In the following, let's focus on WeChat Mini-Programs, then we'll discuss what i
 As we all know, WeChat Mini-Programs are widely used in our daily life, billions of them have launching, covering various industries with diverse functions.
 They run as sub-applications within the WeChat app, they can be used handily without downloading and installation.
 They're ligter than mobile apps and more secure than websites, users are able to access a large amount of services without leaving WeChat.
-They're not substitutes for mobile apps, but complement each other.
-
-# habits
+They're not substitutes for mobile apps, but complements.
 Let's take a look at the following three aspects about how mini-programs change our habits.
-Firstly, they have been changing our life habits.
-We can order takeout, reserve tickets or share shopping discounts, our e-commerce era becomes more complete.
-We can also play mini-games with friends, watch short videos or subscribe idol news, our entertainment style becomes more colorful.
-Secondly, they have been changing our working habits.
-We can identify and translate articles, edit office documents or vote in an election, our team collaboration becomes more efficient.
-We can also track where the bus goes, pay with the traffic code or rent shared bicycles, our public transportation becomes more convenient.
-Thirdly, they have even been changing our epidemic prevention and control measures.
-We need to show our health code, cooperate with investigations and make appointments for vaccination, our government affairs service becomes more intelligent.
+
+# life habits
+Firstly, they've been changing our life habits.
+We can order takeout, reserve tickets and share shopping discounts, so our e-commerce era becomes more complete.
+We can also play mini-games, watch short videos and subscribe our idol news, so our entertainment style becomes more colorful.
+
+# working habits
+Secondly, they've been changing our working habits.
+We can recognize and translate articles, edit office documents and vote in an election, so our team collaboration becomes more efficient.
+We can also track where the bus arrives, pay with the traffic code and rent shared bicycles, so our public transportation becomes more convenient.
+
+# epidemic prevention and control
+Thirdly, they've even been changing our epidemic prevention and control measures.
+We need to show our health code, cooperate to fill out investigations and make appointments for vaccination, so our government affairs service becomes more intelligent.
+
+<!-- for individuals -->
 
 <!-- how to change our habits -->
   role in / industries / jobs / positions
