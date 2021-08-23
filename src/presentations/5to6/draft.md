@@ -26,16 +26,21 @@ We can recognize and translate articles, edit office documents and vote in an el
 We can also track where the bus arrives, pay with the traffic code and rent shared bicycles, so our public transportation becomes more convenient.
 
 # epidemic prevention and control
-Thirdly, they've even been changing our epidemic prevention and control measures.
+Thirdly, they've even been changing our epidemic prevention and control policies.
 We need to show our health code, cooperate to fill out investigations and make appointments for vaccination, so our government affairs service becomes more intelligent.
 
-<!-- for individuals -->
+# impacts
+Consequently, based on the above content, we've seen positive impacts of mini-programs.
+For individuals, they absolutely bring us more high-tech services.
+For enterprises, they definitely save the developing cost and provide new opportunities.
+For WeChat themselves, they rapidly boost WeChat users and expand the whole technical ecosystem.
 
-<!-- how to change our habits -->
-  role in / industries / jobs / positions
+# summary
+
+# ending
+That's all of my presentation! I'am Ajax, thanks everyone!
+
 <!-- comparison -->
   past / present / future
 
 infinite potential
-
-https://daxueconsulting.com/wp-content/uploads/2020/09/WeChat-Mini-Programs-2020-Report-by-Daxue-Consulting-1.pdf
