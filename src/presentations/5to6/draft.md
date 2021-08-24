@@ -7,7 +7,7 @@ In my previous upgrade presentations, I've mentioned my name is a terminology fr
 But today, let's get started to have an exploration of another prevalent terminology.
 
 ## topic
-With an increasingly accelerating of science and technology development, varieties of technical products are subverting our lifestyle.
+With an increasingly accelerating of sci-tech development, varieties of technical products are subverting our lifestyle.
 Today, I'm going to talk about 'Mini Program, Massive Change'.
 In the following, let's focus on WeChat Mini-Programs, then we'll discuss what it is and how it changes our habits.
 
@@ -39,7 +39,7 @@ For enterprises, they definitely save the developing cost and provide new opport
 For WeChat themselves, they rapidly boost WeChat users and expand the whole technical ecosystem.
 
 ## summary
-Last but not least, with the support of artificial intelligence, big data and fifth-generation networks, I firmly believe that mini-programs will continue to unleash their infinite potential.
+Last but not least, with the support of AI, cloud computing and fifth-generation networks, I firmly believe that mini-programs will continue to unleash their infinite potential.
 Under such circumstance, I have to keep enhancing my mini-programs development skills because of 'Mini Program, Massive Change'.
 
 ## ending
