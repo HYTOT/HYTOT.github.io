@@ -8,7 +8,7 @@ But today, let's get started to have an exploration of another prevalent termino
 
 ## topic
 With an increasingly accelerating of science and technology development, varieties of technical products are subverting our lifestyle.
-Today, I'm going to talk about "Mini Program, Massive Change".
+Today, I'm going to talk about 'Mini Program, Massive Change'.
 In the following, let's focus on WeChat Mini-Programs, then we'll discuss what it is and how it changes our habits.
 
 ## introduction
@@ -40,7 +40,7 @@ For WeChat themselves, they rapidly boost WeChat users and expand the whole tech
 
 ## summary
 Last but not least, with the support of artificial intelligence, big data and fifth-generation networks, I firmly believe that mini-programs will continue to unleash their infinite potential.
-Under the circumstance, I have to keep enhancing my mini-programs development skills because of "Mini Program, Massive Change".
+Under the circumstance, I have to keep enhancing my mini-programs development skills because of 'Mini Program, Massive Change'.
 
 ## ending
 That's all of my presentation! I'm Ajax, thanks everyone!
