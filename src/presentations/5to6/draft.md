@@ -14,7 +14,7 @@ In the following, let's focus on WeChat Mini-Programs, then we'll discuss what i
 ## introduction
 As we all know, WeChat Mini-Programs are widely used in our daily life, billions of them have launching, covering various industries with diverse functions.
 They run as sub-applications within the WeChat app, they can be used handily without downloading and installation.
-They're ligter than mobile apps and more secure than websites, users are able to access a large amount of services without leaving WeChat.
+They're lighter than mobile apps and more secure than websites, users are able to access a large number of services without leaving WeChat.
 They're not substitutes for mobile apps, but complements.
 Let's take a look at the following three aspects about how mini-programs change our habits.
 
@@ -33,7 +33,7 @@ Thirdly, they've even been changing our epidemic prevention and control policies
 We need to show our health code, cooperate to fill out investigations and make an appointment for vaccination, so our government affairs service becomes more intelligent.
 
 ## impacts
-Consequently, based on the above content, we've seen positive impacts of mini-programs.
+Consequently, based on the above content, we've seen many superiorities of mini-programs.
 For individuals, they absolutely bring us more high-tech services.
 For enterprises, they definitely save the developing cost and provide new opportunities.
 For WeChat themselves, they rapidly boost WeChat users and expand the whole technical ecosystem.
