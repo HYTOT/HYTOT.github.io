@@ -14,7 +14,7 @@ In the following, let's focus on WeChat Mini-Programs, then we'll discuss what i
 ## introduction
 As we all know, WeChat Mini-Programs are widely used in our daily life, billions of them have launching, covering various industries with diverse functions.
 They run as sub-applications within the WeChat app, they can be used handily without downloading and installation.
-They're lighter than mobile apps and more secure than websites, users are able to access a large number of services without leaving WeChat.
+They're more lightweight than mobile apps and more secure than websites, users are able to access a large number of services without leaving WeChat.
 They're not substitutes for mobile apps, but complements.
 Let's take a look at the following three aspects about how mini-programs change our habits.
 
