@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "yarn start:tem8",
-    "start:tem8": "cross-env INPUT_FILE=./src/tem8.md nodemon -e ts,md --ignore build/ --exec ts-node ./index.ts",
-    "start:adv": "cross-env INPUT_FILE=./src/advanced.md nodemon -e ts,md --ignore build/ --exec ts-node ./index.ts",
+    "start": "yarn start:adv",
+    "start:adv": "cross-env INPUT_FILE=./src/vocabularies/advanced.md nodemon -e ts,md --ignore build/ --exec ts-node ./index.ts",
+    "start:tem8": "cross-env INPUT_FILE=./src/vocabularies/tem8.md nodemon -e ts,md --ignore build/ --exec ts-node ./index.ts",
     "style": "lessc ./src/styles/index.less > ./src/styles/index.css"
   },
   "devDependencies": {
