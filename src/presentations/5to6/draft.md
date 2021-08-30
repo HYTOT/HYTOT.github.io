@@ -9,12 +9,12 @@ But today, let's get started to have an exploration of another prevalent termino
 ## topic
 With an increasingly accelerating of sci-tech development, varieties of technical products are subverting our lifestyle.
 Today, I'm going to talk about 'Mini Program, Massive Change'.
-In the following, let's focus on WeChat Mini-Programs, then we'll discuss what it is and how it changes our habits.
+In the following part, let's focus on WeChat Mini-Programs, then we'll discuss what it is and how it changes our habits.
 
 ## introduction
 As we all know, WeChat Mini-Programs are widely used in our daily life, billions of them have been launched, covering various industries with diverse functions.
 They run as sub-applications within the WeChat app, they can be used handily without downloading and installation.
-They're more lightweight than mobile apps and more secure than websites, users are able to access a large number of services without leaving WeChat.
+They're lighter than mobile apps and securer than websites, users are able to access a large number of services without leaving WeChat.
 They're not substitutes for mobile apps, but complements.
 Let's take a look at the following three aspects about how mini-programs change our habits.
 
