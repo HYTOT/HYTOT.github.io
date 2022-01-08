@@ -2,27 +2,23 @@
 #include <iostream>
 using namespace std;
 
-void readPresentation()
-{
+void ReadPresentation() {
   ifstream infile;
   infile.open("../../presentations/5to6/draft.md", ios::in);
-  if (!infile.is_open())
-  {
+  if (!infile.is_open()) {
     cout << "file open failed" << endl;
     return;
   }
   string buf;
-  while (true)
-  {
+  while (true) {
     istream& line = getline(infile, buf);
     if (!line) return;
     cout << buf << endl;
   }
 }
 
-int main()
-{
-  readPresentation();
+int main() {
+  ReadPresentation();
   cout << endl;
   system("pause");
   return 0;
